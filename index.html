@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>webberk</title>
+<style>
+
+body {
+    background-image: url("bgtwinkle.gif");
+    background-color: crimson;
+    cursor: url("ANImis18.gif"), default;
+    background-repeat: repeat;
+    height: 100vh;
+
+
+}
+
+h1 {
+    color: rgb(118, 26, 148);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 5px;
+}
+
+.leftside {
+position: absolute;
+display: block;
+top: 0;
+width: 15%;
+height: 100vh;
+overflow-y: scroll;
+
+color: antiquewhite;
+white-space: prewrap;
+
+}
+
+.maincontent {
+position: absolute;
+display: block;
+top: 0;
+left: 15%;
+width: 70%;
+height: 100vh;
+    p {
+        margin-right: 50%;
+        color: blueviolet;
+    }
+}
+.rightside {
+position: absolute;
+display: block;
+top: 0;
+right: 0%;
+width: 15%;
+height: 100vh;
+    p {
+        margin-right: 50%;
+        color: blueviolet;
+    }
+}
+
+
+
+#tile1 {
+    background-color: rgb(01, 08, 10);
+    background-repeat: repeat;
+}
+
+
+
+
+        
+        
+</style>
+</head>
+<body>
+
+
+    <div class="leftside">
+        <h1>interstellar_script</h1>
+
+        
+         <div id="interstellar_script"></div>
+
+    <script>
+        fetch("interstellar_script.txt")
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById("interstellar_script").textContent = text;
+            })
+            .catch(error => {
+                document.getElementById("interstellar_script").textContent =
+                    "Could not load essay.txt";
+                console.error(error);
+            });
+    </script>
+
+
+        </div>
+
+
+    <div class="maincontent" id="tile1">
+        <h1>webberk</h1>
+        <p>
+The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in
+ late 1991. It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were
+ strongly influenced by CERN SGML, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of
+ these elements still exist in HTML 4.
+ HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages.
+ Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by
+ the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques
+ for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the
+ early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used
+ by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated
+ ranges with attributes) rather than merely print effects, with separate structure and markup. HTML has been progressively moved in
+ this direction with CSS.
+        </p>
+        <img src="SINSITER.png" height="100" width="100">
+        <br>
+        <img src="Tim_Berners-Lee_April_2009.jpg" height="300" width="200">
+
+</div>
+
+
+
+
+    
+    
+    
+</body>
+</html>
