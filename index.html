@@ -20,48 +20,49 @@ h1 {
     margin-left: 5px;
 }
 
+h2 {
+    color:burlywood;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    color:darkgreen;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
 .leftside {
 position: absolute;
-display: block;
 top: 0;
 width: 15%;
 height: 100vh;
 overflow-y: scroll;
-
 color: antiquewhite;
-white-space: prewrap;
-
 }
 
 .maincontent {
 position: absolute;
-display: block;
 top: 0;
 left: 15%;
 width: 70%;
 height: 100vh;
-    p {
-        margin-right: 50%;
-        color: blueviolet;
-    }
+
 }
 .rightside {
 position: absolute;
-display: block;
 top: 0;
 right: 0%;
 width: 15%;
 height: 100vh;
-    p {
-        margin-right: 50%;
-        color: blueviolet;
-    }
 }
 
 
 
 #tile1 {
-    background-color: rgb(01, 08, 10);
+    background-color: rgb(40, 40, 40);
     background-repeat: repeat;
 }
 
@@ -76,49 +77,42 @@ height: 100vh;
 
 
     <div class="leftside">
-        <h1>interstellar_script</h1>
-
-        
-         <div id="interstellar_script"></div>
-
-    <script>
-        fetch("interstellar_script.txt")
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById("interstellar_script").textContent = text;
-            })
-            .catch(error => {
-                document.getElementById("interstellar_script").textContent =
-                    "Could not load essay.txt";
-                console.error(error);
-            });
-    </script>
-
+        <h1>Layers of programming</h1>
+        <h2>Application</h2>
+        <p>Applications are built to perform particular tasks for the user, they are mostly built with high-level programming languages
+            such as javascript, python and c#. They have the highest level of abstraction and are built to be accessible to people with little
+            to no knowledge of programing.
+        </p>
+        <h2>High-Level Programming Languages</h2>
+        <p>High-Level Programming Languages are used for writing programs or software and can be understood by humans, they use a lot
+            of symbols and logic which humans can understand. It has a high level of abstraction compared to low-level languages and have a 
+            lot of usefull characteristics such as automatic memory management meaning you dont have to allocate or free up memory manually, 
+            and rich standard librarys which help eliminate having to write common tasks from scratch.
+            High-Level Programming Languages are executed in 3 different ways:</p>
+            <h3>INTERPRETED</h3>
+            <p>Interpreted languages are read and executed directly without a compilation stage; this is because they include a program
+                called an interpreter. The interpreter reads each line of the program, converts it to machine code, executes it, then deletes
+                the machine code.
+            </p>
+            <h3>COMPILED LANGUAGES</h3>
+            <p>Compiled languages are turned into a executable form before running, there are two types of compilation:
+                Machine Code compilation - Some compilers convert written code directly into machine code</p>
+            <h3>TRANSLATED</h3>
+        </p>
 
         </div>
 
 
     <div class="maincontent" id="tile1">
         <h1>webberk</h1>
-        <p>
-The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in
- late 1991. It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were
- strongly influenced by CERN SGML, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of
- these elements still exist in HTML 4.
- HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visible or audible web pages.
- Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by
- the web page designer's additional use of CSS. Many of the text elements are mentioned in the 1988 ISO technical report TR 9537 Techniques
- for using SGML, which describes the features of early text formatting languages such as that used by the RUNOFF command developed in the
- early 1960s for the CTSS (Compatible Time-Sharing System) operating system. These formatting commands were derived from the commands used
- by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated
- ranges with attributes) rather than merely print effects, with separate structure and markup. HTML has been progressively moved in
- this direction with CSS.
-        </p>
-        <img src="SINSITER.png" height="100" width="100">
+        
+    </div>
+
+    <div class="rightside">
+        <img src="Dennis_Ritchie_black_and_white_pic-1112511535.jpg">
         <br>
         <img src="Tim_Berners-Lee_April_2009.jpg" height="300" width="200">
-
-</div>
+    </div>
 
 
 
