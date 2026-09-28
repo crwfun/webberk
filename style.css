@@ -24,13 +24,19 @@ td {
 }
 
 img {
-    padding: 0;
-    border-spacing: 0;
     vertical-align: top;
 }
 
 a {
     color: rgb(128, 199, 240);
+}
+
+i {
+    color: #ff530f;
+}
+
+b {
+    color: rgb(111, 221, 111)
 }
 
 .title1 {
@@ -54,7 +60,7 @@ a {
 }
 
 .titlebar {
-    background-color: rgb(41, 38, 68);
+    background-color: rgb(38, 48, 68);
 }
 
 .sidebar {
