@@ -5,18 +5,19 @@ body {
     line-height: 10px;
     font-size: 10px;
     background-image: url(bg/clouds.jpg);
-    background-size:cover;
+    background-size: contain;
+    background-repeat: repeat;
     background-color: rgb(0, 0, 0);
-    color: rgb(159, 127, 247);
-    margin: auto;
+    color: antiquewhite;
     display: table;
+    margin: auto;
     cursor: url('normal-cursor.png'), default; 
 }
 
 table {
     background-color: rgb(56, 49, 43);
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 5px;   
 }
 td {
     vertical-align: top;
@@ -63,28 +64,13 @@ b {
     background-color: rgb(38, 48, 68);
 }
 
-.sidebar {
-    background-color: rgb(41, 38, 68);
-    color: rgb(119, 157, 240);
-}
-.content1 {
-    color: antiquewhite;
-}
-
-.content2 {
-    color: antiquewhite;
+.oldboy {
     background-image: url(bg/clouds2.jpg);
     background-size:cover;
 }
 
-.content3 {
+.fuches {
     color: rgb(255, 251, 0);
     background-image: url(bg/mandelbrot.jpg);
     background-size:cover;
-}
-
-.right {
-  display: block;
-  margin-right: 0;
-  margin-left: auto;
 }
