@@ -3,11 +3,11 @@ body {
     font-family: calibri, verdana, arial;
     letter-spacing: 1px;
     line-height: 10px;
-    font-size: 10px;
-    background-image: url(bg/clouds.jpg);
+    font-size: 12px;
+    background-image: url(bg/clouds3.jpg);
     background-size: contain;
     background-repeat: repeat;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(30, 14, 51);
     color: antiquewhite;
     display: table;
     margin: auto;
@@ -15,9 +15,9 @@ body {
 }
 
 table {
-    background-color: rgb(56, 49, 43);
+    background-color: rgb(38, 48, 68);
     border: 1px solid black;
-    border-radius: 5px;   
+    border-radius: 8px;
 }
 td {
     vertical-align: top;
@@ -29,19 +29,15 @@ img {
 }
 
 a {
-    color: rgb(128, 199, 240);
+    color: rgb(236, 128, 240);
 }
 
-i {
-    color: #ff530f;
-}
-
-b {
-    color: rgb(111, 221, 111)
+i, b {
+    color: #ffa365;
 }
 
 .title1 {
-    background-color: rgb(239, 255, 22);
+    background-color: rgb(254, 131, 0);
     color: black;
     text-align: center;
     font-weight: bolder;
@@ -49,7 +45,7 @@ b {
 }
 .title2 {
 
-    background-color: rgb(208, 22, 255);
+    background-color: rgb(73, 0, 128);
     color: black;
     text-align: center;
     font-weight: bolder;
@@ -61,8 +57,8 @@ b {
 }
 
 .titlebar {
-    background-color: rgb(38, 48, 68);
-}
+  color: yellow;
+} 
 
 .oldboy {
     background-image: url(bg/clouds2.jpg);
@@ -70,7 +66,19 @@ b {
 }
 
 .fuches {
-    color: rgb(255, 251, 0);
-    background-image: url(bg/mandelbrot.jpg);
+    color: yellow;
+    background-image: url(bg/clouds2.jpg);
     background-size:cover;
 }
+
+.scriptbox {
+    color: yellow;
+    background-image: url(bg/clouds2.jpg);
+    background-size: cover;
+}
+
+.scroller {
+  height: 400px;
+  overflow-y: scroll;
+  scrollbar-color: rgb(254, 131, 0) rgb(38, 48, 68);
+} 
